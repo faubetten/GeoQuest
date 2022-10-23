@@ -11,12 +11,14 @@ Roberta Santos, 20211091
 
 # Introdução:
 
-A aplicação é um jogo inspirado no Geoguesser, jogo geográfico que consiste em identificar diferentes locais do mundo através de imagens. Já o GeoQuest é um jogo que faz com que o seu utilizador conheça melhor o espaço a sua volta através de imagens, onde o mesmo tem de encontrar.
+A aplicação é um jogo inspirado no Geoguesser, jogo geográfico que consiste em identificar diferentes locais do mundo através de imagens. Já o GeoQuest é um jogo que faz com que o seu utilizador conheça melhor o espaço a sua volta através de imagens, onde o mesmo tem de encontrar essas localizações.
 
 O jogador poderá escolher entre três modos de jogo diferentes: Short Game (10 minutos de duração), Normal Game (30 minutos de duração), Long Game (60 minutos de duração) e poderá cancelar o jogo a qualquer momento.
 
 Para cada modo de jogo existirá um sistema de leaderboards, em que os jogadores podem submeter e comparar as suas pontuações. A pontuação atribuída será dependente da quantidade de locais encontrados, como também a distância percorrida (em metros) durante o jogo.
+
 Devido ao tipo de jogo a aplicação só estará disponível em dispositivos móveis.
+
 
 # Objetivos:
 

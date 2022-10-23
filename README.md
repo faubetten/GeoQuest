@@ -35,7 +35,9 @@ Desta forma a aplicação incentiva a prática de hábitos saudáveis, estimula 
 
 # Publico Alvo:
 
-Foco nas faixas etárias dos 18-24 e dos 25-34 com uma distribuição espectada representada no gráfico. A distribuição por género é projetada ser 50/50 entre masculino e feminino.
+O público alvo do GeoQuest são jovens adultos entusiastas de desportos ao ar livre.
+
+Foco nas faixas etárias dos 18-24 e dos 25-34 com uma distribuição espectada representada no gráfico. 
 
 
 # Pesquisa de Mercado:

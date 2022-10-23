@@ -56,7 +56,9 @@ FitPotato
 
 # Guiões:
 Guião 1 (Core):
-Um utilizador, que usa a aplicação frequentemente, pretende iniciar um jogo de GeoQuest com 10 minutos de duração. 
+
+O João, de 22 anos, é um turista inglês que está a passar férias em Portugal. Interessado em conhecer melhor a cidade de Lisboa, ele decide instalar o GeoQuest e fazer um jogo rápido de 10 minutos.
+
 Assumindo que este já tem uma conta GeoQuest registado, o processo seria:
 
 Passo 1: Inicialização da aplicação
@@ -72,10 +74,13 @@ Passo 5: O utilizador joga durante 10 minutos
 Passo 6: O jogo acaba e é apresentada a pontuação final ao utilizador consoante a sua performance
 
 Guião 2 (Leaderboard):
-Um utilizador que acabou de bater o seu recorde de pontuação quer verificar o seu lugar na leaderboard. 
+
+A Maria, de 18 anos, que utiliza o GeoQuest frequentemente, acabou de bater o seu recorde de pontuação, e quer verificar o seu lugar na leaderboard.
+
 Assumindo que o modo de jogo que o utilizado jogou foi o "Long Game", o processo seria:
 
 Passo 1: Inicialização da aplicação
+
 Passo 2: O utilizador faz login na sua conta GeoQuest ao digitar o seu nome de utilizador e palavra-passe
 
 Passo 3: O utilizador seleciona a opção "Leaderboards"
@@ -85,10 +90,13 @@ Passo 4: O utilizador seleciona o modo de jogo "Long Game"
 Passo 5: É apresentada a leaderboard do modo de jogo "Long Game" ao utilizador, com destaque à sua pontuação
 
 Guião 3 (Registo):
-Um utilizador que instalou a aplicação pela primeira fez quer registar uma nova conta GeoQuest.
+
+O Roberto, de 25 anos, foi recomendado o GeoQuest por um amigo como uma maneira divertida de fazer exercício físico. Como é a primeira fez que usa o GeoQuest, ele quer registar uma nova conta.
+
 O processo seria:
 
 Passo 1: Inicialização da aplicação
+
 Passo 2: O utilizador seleciona a opção "Register a GeoQuest account"
 
 Passo 3: O utilizador introduz o nome de utilizador e palavra-passe que quer ter
@@ -97,25 +105,43 @@ Passo 4: O utilizador faz login na sua nova conta GeoQuest pela primeira fez
 
 # Descrição da solução a implementar:
 
-Primeiramente o utilizador tem de fazer o login na app, tem de escolher um nome de utilizador e uma palavra-passe.
-Após a conexão ao jogo, o mesmo ira escolher o modo que deseja, e o programa irá direcionar-se para a base de dados de modo a recolher as imagens, localizações e coordenadas lá presentes. Será usada a funcionalidade de localização do dispositivo para determinar os locais durante o jogo e as imagens presentes nas bases de dados serão retiradas pelos autores.
+Primeiramente o utilizador tem de fazer o login na app, escolher um nome de utilizador e uma palavra-passe. Após a conexão ao jogo, o mesmo ira escolher o modo que deseja, e o programa vai recolher as imagens, localizações e coordenadas para disponibilizar ao utilizador. 
+
+Será usada a funcionalidade de localização do dispositivo para determinar os locais durante o jogo e as imagens presentes nas bases de dados serão retiradas pelos autores.
 
 Durante o jogo será mostrada a imagem do local como também um mapa da atual localização do jogador, o mesmo dirigir-se-á ao máximo de pontos que conseguir.
-A pontuação será cotada através da distância percorrida (em metros) e a quantidade de locais encontrados dentro do tempo limite. A leaderboard ira utilizar todas as pontuações presentes na base de dados.
 
-As tecnologias utilizadas para a produção desta aplicação são as mesmas que foram lecionadas em sala de aula, tais como: pg admin, postgre para a modelação e utilização das bases de dados; java para toda a parte da programação orientada a objetos e o android studio para a criação da app na disciplina, programação móvel. 
+A pontuação será cotada através da distância percorrida (em metros) e a quantidade de locais encontrados dentro do tempo limite. A leaderboard ira utilizar todas as pontuações presentes na base de dados.
+ 
 
 
 # Enquadramento nas disciplinas:
-Base de dados -> Desenvolvimento e manutenção das Bases de dados do projeto
 
-Programação orientada a objetos -> Programação e desenvolvimento do servidor do projeto
+Base de dados: criaremos bases de dados para armazenamento e controle dos dados dos utilizadores, as imagens utilizadas no jogo bem como todas as pontuações obtidas na app.
 
-Programação de dispositivos móveis -> Programação e desenvolvimento da própria app
+Programação Orientada a Objetos: iremos formular um servidor em linguagem Java, onde o mesmo servirá como canal entre a base de dados e a aplicação móvel. 
 
-Competências Comunicacionais -> Desenvolvimento de habilidades comunicacionais para as apresentações do projeto
+Programação de Dispositivos Móveis: será produzida uma aplicação móvel, neste caso um jogo, e vai ser por este meio que utilizador terá acesso ao mesmo.
+
+Competências comunicacionais: utilizaremos dos ensinamentos lecionados em sala de aula, para uma melhora na performance nas apresentações.
+
+
+# Requisitos Técnicos:
+
+Linguagem Java para produção da BackendAPI e também para a aplicação móvel.
+
+Linguagem SQL para formulação e manutenção das bases de dados.
+
+# Arquitetura da solução:
+
+Para um bom funcionamento do jogo é essencial um bom desempenho destes três segmentos: as bases de dados, a BackendAPI e a aplicação móvel. A base de dados tem de ser ampla pois vários dados terão de ser armazenados, tal como o servidor pois o jogo funcionada com localizações que estão sempre em mudança, a app móvel para deixar tudo disponível para o utilizador.
+
+# Tecnologias a Utilizar:
+
+As tecnologias utilizadas para a produção deste jogo são: a linguagem Java e a linguagem SQL para o servidor e para as bases de dados respetivamente. E serão também utilizadas como ferramentas de suporte o SpringBoot, o Postgre e o Android Studio.
 
 
 
+Primeira proposta: Documentos>g04-proposta-v1.pdf
 
-Primeira proposta: Documentos>g04-proposta-t2.pdf
+Segunda Proposta: Documentos>g04-proposta-v2.pdf

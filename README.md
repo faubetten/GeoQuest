@@ -20,9 +20,16 @@ Devido ao tipo de jogo a aplicação só estará disponível em dispositivos mó
 
 # Objetivos:
 
-O GeoQuest é um jogo que une o bem-estar e o prazer de sightseeing ao redor da cidade de Lisboa. É uma app que incentiva o seu utilizador a conhecer o ambiente a sua volta. Através de imagens de locais de uma determinada área, o mesmo é desafiado a encontrar o máximo de localizações para que possa acumular o máximo de pontos.
+A pandemia com todas as sua restrições e regras de confinamento, o turismo e a saúde foram as áreas mais afetadas. O turismo teve uma drástica diminuição e a saúde completamente calamitosa.
 
-Desta forma a aplicação incentiva a prática de hábitos saudáveis, estimula o turismo ao redor de pontos icónicos na cidade de Lisboa, proporcionando o turismo da região.
+Agora com as coisas a voltarem à normalidade o turismo tem tido um grande aumento, mas em termos de saúde, o sedentarismo tem aumentado em níveis exponenciais, trazendo todas as suas consequências para a população.
+
+Mas ao GeoQuest vem para ajudar, pois tem como objetivo incentivar o seu utilizador a movimentar-se e melhorar o seu condicionamento físico bem como conhecer melhor a cidade de Lisboa. 
+
+O GeoQuest é um jogo que une o bem-estar e o prazer de sightseeing ao redor da cidade de Lisboa. É uma app que incentiva o seu utilizador a conhecer o ambiente a sua volta. Através de imagens de locais de uma determinada área, onde o mesmo é desafiado a encontrar o máximo de localizações para que possa acumular o máximo de pontos.
+
+Desta forma a aplicação incentiva a prática de hábitos saudáveis, estimula o turismo ao redor de pontos icónicos da capital lusitana, proporcionando um aumento do turismo da região.
+
 
 # Publico Alvo:
 

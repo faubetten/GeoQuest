@@ -4,6 +4,11 @@ create table users (
     users_password VARCHAR NOT NULL
 );
 
+-- Add categories users
+comment on column users.users_id is 'The user''s id';
+comment on column users.users_name is 'The user''s name';
+comment on column users.users_password is 'The user''s password';
+
 create table quest (
     quest_id SERIAL NOT NULL CONSTRAINT quest_pkey PRIMARY KEY,
     pontuacao INTEGER,
@@ -13,6 +18,12 @@ create table quest (
     passos_em_metros DECIMAL (6,3) NOT NULL
 );
 
+-- Add categories quest
+comment on column quest.quest_id is 'The quest''s id';
+comment on column quest.pontuacao is 'The quest''s id';
+comment on column quest.localizacao is 'The quest''s location';
+comment on column quest.locais_encontrados is 'The number of locations found';
+
 create table locais (
     locais_id SERIAL NULL CONSTRAINT locais_pkey PRIMARY KEY,
     coordenadas VARCHAR NOT NULL,
@@ -20,10 +31,20 @@ create table locais (
     morada VARCHAR NULL
 );
 
+-- Add categories locais
+comment on column locais.locais_id is 'The local''s id';
+comment on column locais.coordenadas is 'The local''s coordinates';
+comment on column locais.nome is 'The local''s name';
+
 create table fotos (
     fotos_id SERIAL NOT NULL CONSTRAINT fotos_pkey PRIMARY KEY,
     imagem VARCHAR NOT NULL
 );
+
+-- Add categories fotos
+comment on column fotos.fotos_id is 'The photo''s id';
+comment on column fotos.imagem is 'The image';
+
 
 create table quest_locais (
     quest_locais_id SERIAL NOT NULL CONSTRAINT quest_locais_pkey PRIMARY KEY,
@@ -31,11 +52,21 @@ create table quest_locais (
     quest_locais_locais_id SERIAL NOT NULL REFERENCES locais (locais_id) ON UPDATE CASCADE ON DELETE CASCADE,
 );
 
+-- Add categories quest_locais
+comment on column quest_locais.quest_locais_id is 'The id of the locations used in the quest';
+comment on column quest_locais.quest_locais_quest_id is 'The id of locations used in the quest related to the id of the quest';
+comment on column quest_locais.quest_locais_locais_id is 'The id of the locations used in the quest related to the id of the locations';
+
 create table locais_fotos (
     locais_fotos_id SERIAL NOT NULL CONSTRAINT locais_fotos_pkey PRIMARY KEY,
     locais_fotos_locais_id SERIAL NOT NULL REFERENCES locais (locais_id) ON UPDATE CASCADE ON DELETE CASCADE,
     locais_fotos_foto_id SERIAL NOT NULL REFERENCES fotos (fotos_id) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+-- Add categories locais_fotos
+comment on column locais_fotos.locais_fotos_id is 'The id of the location''s photos';
+comment on column locais_fotos.locais_fotos_locais_id is 'The id of the location''s photos related to the location''s id';
+comment on column locais_fotos.locais_fotos_foto_id is 'The id of the location''s photos related to the photo''s id';
 
 
 create table user_quest (
@@ -43,6 +74,11 @@ create table user_quest (
     user_quest_quest_id SERIAL NOT NULL REFERENCES quest (quest_id) ON UPDATE CASCADE ON DELETE CASCADE,
     user_quest_user_id SERIAL NOT NULL REFERENCES users (users_id) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+-- Add categories user_quest
+comment on column user_quest.user_quest_id is 'The id of the quest played by the user';
+comment on column user_quest.user_quest_quest_id is 'The id of the quest played by the user related to the quest''s id';
+comment on column user_quest.user_quest_user_id is 'The id of the quest played by the user related to the user''s id';
 
 
 insert into users (users_name, users_password) values ('Roberta', '123');

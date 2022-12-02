@@ -29,7 +29,6 @@ create table quest_locais (
     quest_locais_id SERIAL NOT NULL CONSTRAINT quest_locais_pkey PRIMARY KEY,
     quest_locais_quest_id SERIAL NOT NULL REFERENCES quest (quest_id) ON UPDATE CASCADE ON DELETE CASCADE,
     quest_locais_locais_id SERIAL NOT NULL REFERENCES locais (locais_id) ON UPDATE CASCADE ON DELETE CASCADE,
-    timer DECIMAL (6,3) NOT NULL
 );
 
 create table locais_fotos (

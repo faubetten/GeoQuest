@@ -25,7 +25,7 @@ comment on column quest.localizacao is 'The quest''s location';
 comment on column quest.locais_encontrados is 'The number of locations found';
 
 create table locais (
-    locais_id SERIAL NULL CONSTRAINT locais_pkey PRIMARY KEY,
+    locais_id SERIAL Not NULL CONSTRAINT locais_pkey PRIMARY KEY,
     coordenadas VARCHAR NOT NULL,
     nome VARCHAR NOT NULL,
     morada VARCHAR NULL
